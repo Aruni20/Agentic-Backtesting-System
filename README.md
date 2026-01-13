@@ -1,16 +1,16 @@
-# 🤖 Agentic Backtesting System
+# Multi Agentic Backtesting System
 
 > **KB-Aware · Deterministic · Human-in-the-Loop · Auditable**
 
 A production-grade, multi-agent backtesting framework that bridges natural language and quantitative finance through a deterministic, auditable pipeline.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)
+![Streamlit](https://agentic-backtesting-system.streamlit.app/)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
-## 🎯 Core Philosophy
+## Core Philosophy
 
 ```
 The system may pause, wait, or switch to planning mode —
@@ -22,7 +22,7 @@ This is not a traditional backtesting tool. It's an **agentic orchestration syst
 
 ---
 
-## 🏗️ Multi-Agent Architecture
+## Multi-Agent Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -71,7 +71,7 @@ This is not a traditional backtesting tool. It's an **agentic orchestration syst
                     │
                     ▼
         ╔═══════════════════════════════════════╗
-        ║  STEP 8A: STRATEGY FREEZE 🔒          ║
+        ║  STEP 8A: STRATEGY FREEZE         ║
         ║  ─────────────────────────────────    ║
         ║  Configuration becomes IMMUTABLE      ║
         ║  Hash: a1b2c3d4e5f6...                ║
@@ -90,19 +90,19 @@ This is not a traditional backtesting tool. It's an **agentic orchestration syst
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🔒 Determinism & Auditability
+###  Determinism & Auditability
 - **Execution Hash** - Every backtest produces a cryptographic hash for reproducibility
 - **Freeze Boundary** - Configuration becomes immutable before execution
 - **No ML in Logic** - All execution is rule-based, ensuring consistent results
 
-### 🧠 Knowledge Base Architecture
+###  Knowledge Base Architecture
 - **Strategy Artifacts** - JSON definitions with entry/exit rules, parameters
 - **Indicator Library** - Versioned indicator implementations (SuperTrend, RSI, MACD, Bollinger)
 - **Dataset Registry** - Metadata linking to OHLCV data files
 
-### 📊 Professional Metrics
+### Professional Metrics
 | Metric | Description |
 |--------|-------------|
 | Sharpe Ratio | Risk-adjusted returns (annualized) |
@@ -112,14 +112,14 @@ This is not a traditional backtesting tool. It's an **agentic orchestration syst
 | Profit Factor | Gross profit / Gross loss |
 | Expectancy | Average expected profit per trade |
 
-### 🛡️ Fallback Mechanisms
+###  Fallback Mechanisms
 - **Ambiguity Gate** - Pauses when confidence < 50%
 - **Planning Mode** - If execution impossible, suggests next steps
 - **Human Clarification** - Asks in English, never for parameters
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Clone the repository
@@ -140,7 +140,7 @@ Run SuperTrend on NIFTY from January 1st to January 31st 2026
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── app.py                 # Streamlit UI with multi-agent orchestration
@@ -159,7 +159,7 @@ Run SuperTrend on NIFTY from January 1st to January 31st 2026
 
 ---
 
-## 🎨 Available Strategies
+##  Available Strategies
 
 | Strategy | Type | Indicators |
 |----------|------|------------|
@@ -173,21 +173,21 @@ Run SuperTrend on NIFTY from January 1st to January 31st 2026
 
 ## 🔧 Production Features
 
-- ✅ **State Machine UI** - Not a chatbot, an airlock between English and code
-- ✅ **Progress Visualization** - Step-by-step pipeline execution with timing
-- ✅ **Export Capabilities** - Download trades (CSV), metrics (JSON), full reports
-- ✅ **Interactive Charts** - Plotly candlesticks with trade markers
-- ✅ **Date Range Picker** - Configurable backtest periods
-- ✅ **Sidebar KB Browser** - View available strategies and datasets
+-  **State Machine UI** - Not a chatbot, an airlock between English and code
+-  **Progress Visualization** - Step-by-step pipeline execution with timing
+-  **Export Capabilities** - Download trades (CSV), metrics (JSON), full reports
+-  **Interactive Charts** - Plotly candlesticks with trade markers
+-  **Date Range Picker** - Configurable backtest periods
+-  **Sidebar KB Browser** - View available strategies and datasets
 
 ---
 
-## 📜 License
+##  License
 
 MIT License - See [LICENSE](LICENSE) for details.
 
 ---
 
 <p align="center">
-  <b>Built with ❤️ for deterministic, auditable quantitative finance</b>
+  <b>Built for QuantX India for deterministic, auditable quantitative finance</b>
 </p>
