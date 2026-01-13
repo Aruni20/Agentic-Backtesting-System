@@ -1,0 +1,23 @@
+{
+    "id": "strat_macd_001",
+    "name": "MACD Crossover Strategy",
+    "version": "1.0.0",
+    "hash": "f6a7b8c9d0e1f6a7b8c9d0e1f6a7b8c9",
+    "description": "Trend-following strategy based on MACD line and signal line crossovers.",
+    "required_indicators": [
+        "indicator_macd_001"
+    ],
+    "entry_rules": {
+        "long": "MACD line crosses above signal line",
+        "short": "MACD line crosses below signal line"
+    },
+    "exit_rules": {
+        "long": "MACD line crosses below signal line",
+        "short": "MACD line crosses above signal line"
+    },
+    "parameters": {
+        "fast_period": 12,
+        "slow_period": 26,
+        "signal_period": 9
+    }
+}

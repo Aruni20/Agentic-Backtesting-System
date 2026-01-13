@@ -1,0 +1,21 @@
+{
+    "id": "indicator_rsi_001",
+    "name": "Relative Strength Index",
+    "version": "1.0.0",
+    "hash": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
+    "description": "Momentum oscillator measuring speed and magnitude of price changes.",
+    "inputs": [
+        "close"
+    ],
+    "outputs": [
+        "rsi"
+    ],
+    "parameters": {
+        "period": {
+            "type": "integer",
+            "default": 14,
+            "min": 2,
+            "max": 50
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "id": "indicator_supertrend_001",
+    "name": "SuperTrend",
+    "version": "1.0.0",
+    "hash": "f6e5d4c3b2a1f6e5d4c3b2a1f6e5d4c3",
+    "description": "ATR-based volatility indicator for trend direction.",
+    "inputs": [
+        "high",
+        "low",
+        "close"
+    ],
+    "outputs": [
+        "supertrend_line",
+        "direction"
+    ],
+    "parameters": {
+        "atr_period": {
+            "type": "integer",
+            "default": 10,
+            "min": 1,
+            "max": 50
+        },
+        "multiplier": {
+            "type": "float",
+            "default": 3.0,
+            "min": 0.5,
+            "max": 10.0
+        }
+    }
+}

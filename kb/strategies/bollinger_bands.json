@@ -1,0 +1,22 @@
+{
+    "id": "strat_bollinger_001",
+    "name": "Bollinger Band Mean Reversion",
+    "version": "1.0.0",
+    "hash": "e5f6a7b8c9d0e5f6a7b8c9d0e5f6a7b8",
+    "description": "Mean-reversion strategy using Bollinger Bands for entry/exit signals.",
+    "required_indicators": [
+        "indicator_bollinger_001"
+    ],
+    "entry_rules": {
+        "long": "Price touches or crosses below lower Bollinger Band",
+        "short": "Price touches or crosses above upper Bollinger Band"
+    },
+    "exit_rules": {
+        "long": "Price reaches middle band (SMA) or upper band",
+        "short": "Price reaches middle band (SMA) or lower band"
+    },
+    "parameters": {
+        "period": 20,
+        "std_dev": 2.0
+    }
+}

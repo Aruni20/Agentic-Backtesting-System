@@ -1,0 +1,29 @@
+{
+    "id": "indicator_bollinger_001",
+    "name": "Bollinger Bands",
+    "version": "1.0.0",
+    "hash": "b2c3d4e5f6a7b2c3d4e5f6a7b2c3d4e5",
+    "description": "Volatility bands placed above and below a moving average.",
+    "inputs": [
+        "close"
+    ],
+    "outputs": [
+        "upper_band",
+        "middle_band",
+        "lower_band"
+    ],
+    "parameters": {
+        "period": {
+            "type": "integer",
+            "default": 20,
+            "min": 5,
+            "max": 50
+        },
+        "std_dev": {
+            "type": "float",
+            "default": 2.0,
+            "min": 0.5,
+            "max": 4.0
+        }
+    }
+}

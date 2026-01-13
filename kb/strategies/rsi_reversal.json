@@ -1,0 +1,23 @@
+{
+    "id": "strat_rsi_001",
+    "name": "RSI Reversal Strategy",
+    "version": "1.0.0",
+    "hash": "d4e5f6a7b8c9d4e5f6a7b8c9d4e5f6a7",
+    "description": "Mean-reversion strategy based on RSI overbought/oversold levels.",
+    "required_indicators": [
+        "indicator_rsi_001"
+    ],
+    "entry_rules": {
+        "long": "RSI crosses above 30 (oversold recovery)",
+        "short": "RSI crosses below 70 (overbought reversal)"
+    },
+    "exit_rules": {
+        "long": "RSI reaches 70 or stop-loss hit",
+        "short": "RSI reaches 30 or stop-loss hit"
+    },
+    "parameters": {
+        "rsi_period": 14,
+        "oversold": 30,
+        "overbought": 70
+    }
+}

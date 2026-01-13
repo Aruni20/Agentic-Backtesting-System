@@ -1,0 +1,35 @@
+{
+    "id": "indicator_macd_001",
+    "name": "MACD",
+    "version": "1.0.0",
+    "hash": "c3d4e5f6a7b8c3d4e5f6a7b8c3d4e5f6",
+    "description": "Moving Average Convergence Divergence trend-following momentum indicator.",
+    "inputs": [
+        "close"
+    ],
+    "outputs": [
+        "macd_line",
+        "signal_line",
+        "histogram"
+    ],
+    "parameters": {
+        "fast_period": {
+            "type": "integer",
+            "default": 12,
+            "min": 5,
+            "max": 20
+        },
+        "slow_period": {
+            "type": "integer",
+            "default": 26,
+            "min": 15,
+            "max": 50
+        },
+        "signal_period": {
+            "type": "integer",
+            "default": 9,
+            "min": 5,
+            "max": 15
+        }
+    }
+}

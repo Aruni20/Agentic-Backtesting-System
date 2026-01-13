@@ -1,0 +1,24 @@
+{
+    "id": "dataset_nifty_fut_001",
+    "name": "NIFTY Futures (Sample)",
+    "version": "1.0.0",
+    "hash": "1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d",
+    "description": "Sample OHLCV data for NIFTY Futures.",
+    "exchange": "NSE",
+    "segment": "FO",
+    "symbol": "NIFTY",
+    "instrument_type": "futures",
+    "expiry_resolution": "front_month",
+    "data_path": "data/nifty_futures_sample.csv",
+    "schema": {
+        "columns": [
+            "Date",
+            "Open",
+            "High",
+            "Low",
+            "Close",
+            "Volume"
+        ],
+        "date_format": "%Y-%m-%d"
+    }
+}

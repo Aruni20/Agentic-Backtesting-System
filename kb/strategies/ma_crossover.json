@@ -1,0 +1,22 @@
+{
+    "id": "strat_ma_crossover_001",
+    "name": "Moving Average Crossover",
+    "version": "1.0.0",
+    "hash": "b2c3d4e5f6a7b2c3d4e5f6a7b2c3d4e5",
+    "description": "A trend-following strategy based on fast and slow moving average crossovers.",
+    "required_indicators": [
+        "indicator_sma_001"
+    ],
+    "entry_rules": {
+        "long": "Fast MA crosses above Slow MA",
+        "short": "Fast MA crosses below Slow MA"
+    },
+    "exit_rules": {
+        "long": "Fast MA crosses below Slow MA",
+        "short": "Fast MA crosses above Slow MA"
+    },
+    "parameters": {
+        "fast_period": 5,
+        "slow_period": 20
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "strat_supertrend_001",
+  "name": "SuperTrend Strategy",
+  "version": "1.0.0",
+  "hash": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
+  "description": "A trend-following strategy based on the SuperTrend indicator.",
+  "required_indicators": ["indicator_supertrend_001"],
+  "entry_rules": {
+    "long": "price closes above SuperTrend line AND SuperTrend direction is UP",
+    "short": "price closes below SuperTrend line AND SuperTrend direction is DOWN"
+  },
+  "exit_rules": {
+    "long": "SuperTrend direction flips to DOWN",
+    "short": "SuperTrend direction flips to UP"
+  },
+  "parameters": {
+    "atr_period": 10,
+    "multiplier": 3.0
+  }
+}
