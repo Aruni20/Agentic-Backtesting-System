@@ -5,11 +5,11 @@
 A production-grade, multi-agent backtesting framework that bridges natural language and quantitative finance through a deterministic, auditable pipeline.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![Streamlit](https://agentic-backtesting-system.streamlit.app/)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
-
+## Demo-: https://agentic-backtesting-system.streamlit.app/
 ## Core Philosophy
 
 ```
